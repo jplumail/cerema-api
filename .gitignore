@@ -1,0 +1,8 @@
+tmp
+mapserver
+__pycache__
+Mask_RCNN-master
+README.txt
+mask_rcnn.egg-info
+model/*
+stage_imagerie_drone/*

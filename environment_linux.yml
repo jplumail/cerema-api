@@ -1,0 +1,25 @@
+name: server
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - geopandas
+  - celery
+  - pandas
+  - rasterio
+  - tensorflow-gpu=1.15
+  - keras=2.2.5
+  - python=3.7
+  - labelme
+  - pyqt
+  - h5py==2.10.0
+  - scikit-image
+  - flask
+  - flask-cors
+  - opencv
+  - pyside2
+  - ipython
+  - pip:
+    - keras-unet
+    - redis
+prefix: /home/jean/miniconda3/envs/server
