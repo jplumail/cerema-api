@@ -1,3 +1,5 @@
+# Projet Cerema
+![MRCNN output](docs/mrcnn_output.png)
 
 # Installation
 Télécharger le répertoire
