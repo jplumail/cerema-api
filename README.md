@@ -1,5 +1,10 @@
 # Projet Cerema
+Ce projet (voir [poster](poster.pdf)) a été mené par plusieurs 6 étudiants d'IMT Atlantique. Il contient une API Flask qui permet de déployer des algorithmes de deep learning (Mask-RCNN) développés par le [Cerema](https://www.cerema.fr/fr). Le répertoire n'est pas fonctionnel car il ne contient pas les algorithmes (privés) du Cerema.
+
+Les algorithmes concernent la détection d'exploitation conchylicole pour contrôler le respect du cadastre.
 ![MRCNN output](docs/mrcnn_output.png)
+
+Une IHM a été développée pour utiliser les algorithmes depuis le navigateur.
 
 # Installation
 Télécharger le répertoire
