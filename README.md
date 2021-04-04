@@ -1,59 +1,70 @@
-# Projet Cerema
-Ce projet (voir [poster](poster.pdf)) a été mené par plusieurs 6 étudiants d'IMT Atlantique. Il contient une API Flask qui permet de déployer des algorithmes de deep learning (Mask-RCNN) développés par le [Cerema](https://www.cerema.fr/fr). Le répertoire n'est pas fonctionnel car il ne contient pas les algorithmes (privés) du Cerema.
+# Getting Started with Create React App
 
-Les algorithmes concernent la détection d'exploitation conchylicole pour contrôler le respect du cadastre.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![MRCNN output](docs/mrcnn_output.png)
+## Available Scripts
 
-Une IHM a été développée pour utiliser les algorithmes depuis le navigateur.
+In the project directory, you can run:
 
-# Installation
-Télécharger le répertoire
-```bash
-git clone https://gitlab.imt-atlantique.fr/05-projet-ce-2020/backend
-cd backend
-```
-### Mise en place de l'environnement Python
-Installer [anaconda/miniconda](https://docs.conda.io/en/latest/miniconda.html).
+### `npm start`
 
-Avec un anaconda shell, créer un environnement à partir d'un des fichiers .yml (windows/linux) :
-```bash
-conda env create -f environment_(windows/linux).yml
-conda activate backend
-```
-Installer Mask-RCNN manuellement :
- - télécharger https://github.com/matterport/Mask_RCNN/archive/master.zip
- - Dézipper le fichier
- - Dans un shell :
-```bash
- conda activate backend
- cd Mask_RCNN
- python setup.py install
-```
-Installer [Redis](https://redis.io/) (disponible sur Windows et Linux).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# Utilisation
-### Lancer Redis
-Sur Windows, exécuter le binaire `redis-server.exe`.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Sur Linux, redis devrait déjà être lancé. `systemctl status redis` pour vérifier.
+### `npm test`
 
-### Lancer flask
-Dans le répertoire principal :
- ```bash
- python app.py
- ```
-### Lancer celery
-Toujour dans le répertoire principal :
- ```bash
- celery -A app.celery worker
- ```
-## Test
-```bash
- curl -X POST -F "path=/path/to/raster" "http://127.0.0.1:5000/api/load"
-```
-Charge la photo. Renvoie un lien pour voir l'état d'avancement du chargement.
-```bash
- curl -X GET "http://127.0.0.1:5000/api/detection?image_id=0&minLon=-2.302&maxLon=-2.301&minLat=48.6435&maxLat=48.6445&type=oyster_pocket"
-```
-Lance la détection. Renvoie un lien pour voir l'état d'avancement de la détection.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
