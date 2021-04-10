@@ -1,0 +1,19 @@
+.ol-map {
+  min-width: 900px;
+  min-height: 600px;
+  margin: 25px;
+  height: 600px;
+  width: "100%";
+
+}
+.ol-control {
+  position: absolute;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 10px;
+  padding: 2px;
+}
+.ol-full-screen {
+  top: .5em;
+  right: .5em;
+
+}
